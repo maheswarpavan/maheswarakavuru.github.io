@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maheswara Kavuru — NetSuite Administrator & Developer</title>
-<meta name="description" content="Senior NetSuite Administrator & Developer — SuiteScript, OneWorld, ARM/ASC 606, Celigo, SuiteFlow, Multi-Book, REST APIs. Tampa, FL.">
+<meta name="description" content="Senior NetSuite Administrator & Developer — SuiteScript, OneWorld, ARM/ASC 606, Celigo, SuiteFlow, Multi-Book, REST APIs. Andover, MN.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,12 @@
     <a href="#code">Code</a>
     <a href="#contact">Contact</a>
   </div>
-  <a href="mailto:maheswarakavuru@outlook.com" class="nav-cta">Get in touch</a>
+  <div class="nav-cta-group">
+    <a href="https://maheswarpavan.github.io/maheswarakavuru.github.io/Pavan A&D.docx"
+     class="nav-cta"
+     download="Pavan_Kavuru_Resume.pdf"
+     target="_blank">Resume</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -33,9 +38,8 @@
     <p class="hero-subtitle">
       Senior NetSuite Administrator &amp; Developer
       <span>·</span>
-      Tampa, FL
+      Andover, MN
       <span>·</span>
-      Remote
     </p>
     <div class="tag-row">
       <span class="tag">SuiteScript 2.x</span>
@@ -48,8 +52,8 @@
       <span class="tag">SDF / Git</span>
     </div>
     <div class="hero-actions">
-      <button class="btn-primary" onclick="scrollTo('contact')">Get in touch</button>
-      <button class="btn-ghost" onclick="scrollTo('projects')">View projects</button>
+      <button class="btn-primary" onclick="scrollToSection('contact')">Get in touch</button>
+      <button class="btn-ghost" onclick="scrollToSection('projects')">View projects</button>
     </div>
   </div>
 </div>
@@ -441,15 +445,16 @@
     <p class="section-label">Contact</p>
     <div class="contact-grid">
 
-      <a href="mailto:maheswarakavuru@outlook.com" class="contact-card">
+      <button class="contact-card" onclick="copyEmail(this)" aria-label="Copy email address">
         <div class="contact-icon">
           <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div>
           <div class="contact-label">Email</div>
-          
+          <div class="contact-value">maheswarakavuru@outlook.com</div>
         </div>
-      </a>
+        <span class="copy-hint" aria-hidden="true">Click to copy</span>
+      </button>
 
       <a href="https://linkedin.com/in/maheswarakavuru" target="_blank" rel="noopener" class="contact-card">
         <div class="contact-icon">
@@ -464,7 +469,7 @@
 </section>
 
 <footer>
-  &copy; 2025 Maheswara Kavuru &nbsp;&middot;&nbsp; maheswarakavuru.github.io &nbsp;&middot;&nbsp; Built with HTML &amp; CSS
+  &copy; 2026 Maheswara Kavuru &nbsp;&middot;&nbsp; maheswarakavuru.github.io 
 </footer>
 
 <script src="js/main.js"></script>

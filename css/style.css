@@ -103,9 +103,15 @@ nav {
   color: #fff !important;
 }
 
+.nav-cta-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 /* ── LAYOUT ── */
 .container {
-  max-width: 900px;
+  max-width: 820px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -503,6 +509,10 @@ section {
   transition: box-shadow 0.15s, transform 0.15s;
   text-decoration: none;
   color: inherit;
+  font-family: inherit;
+  width: 100%;
+  text-align: left;
+  position: relative;
 }
 
 .contact-card:hover {
@@ -529,6 +539,25 @@ section {
 
 .contact-label { font-size: 13px; font-weight: 500; }
 .contact-val   { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.contact-value { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+.copy-hint {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.contact-card:hover .copy-hint { opacity: 0.7; }
+
+.contact-card.copied {
+  border-color: #22c55e;
+}
+.contact-card.copied .copy-hint {
+  color: #22c55e;
+  opacity: 1;
+}
 
 /* ── SECTION BACKGROUNDS ── */
 .section-bg  { background: var(--bg);           border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }

@@ -1,3 +1,17 @@
+// Copy email to clipboard
+function copyEmail(btn) {
+  var email = 'maheswarakavuru@outlook.com';
+  var hint = btn.querySelector('.copy-hint');
+  navigator.clipboard.writeText(email).then(function () {
+    btn.classList.add('copied');
+    if (hint) hint.textContent = 'Copied!';
+    setTimeout(function () {
+      btn.classList.remove('copied');
+      if (hint) hint.textContent = 'Click to copy';
+    }, 2000);
+  });
+}
+
 // Code sample tab switcher
 function switchTab(id, btn) {
   document.querySelectorAll('.code-pane').forEach(function(pane) {
@@ -11,7 +25,7 @@ function switchTab(id, btn) {
 }
 
 // Smooth scroll for hero buttons
-function scrollTo(sectionId) {
+function scrollToSection(sectionId) {
   var el = document.getElementById(sectionId);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
